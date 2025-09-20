@@ -1,4 +1,5 @@
 const teachers = ["Nathan", "Ed", "Fabio", "Phil", "Carlo", "Lewis", "Luca"]; // NON MODIFICARE QUESTA VARIABILE
+const teachers2 = [];
 
 // 0. Per ogni insegnante stampa in console la frase:
 // [Nome insengante] è l'insegnante in posizione [i]
@@ -38,16 +39,27 @@ console.log(teachers);
 
 // 7. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = null;
+const searchedTeacher = "Fabio";
+const isFabioPresent = teachers.includes(searchedTeacher);
+console.log("isFabioPresent:", isFabioPresent);
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
+const searchedTeacher2 = "Lewis";
+const lewisIndex = teachers.indexOf(searchedTeacher2);
+console.log("lewisIndex:", lewisIndex);
+
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+const teachersString = teachers.join(",");
+console.log("teachersString:", teachersString);
+
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+const isTeachersEmpty = teachers.length === 0;
+console.log("isTeachersEmpty:", isTeachersEmpty);
+const isTeachers2Empty = teachers2.length === 0;
+console.log("isTeachers2Empty:", isTeachers2Empty);
+
