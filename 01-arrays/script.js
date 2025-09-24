@@ -17,6 +17,7 @@ console.log("fourthTeacher: ", fourthTeacher);
 const newTeacher = "Patrick";
 teachers.splice(4, 1, newTeacher);
 console.log(teachers);
+// oppure si può fare teachers[4] = "Patrick";
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = teachers.pop();
@@ -62,4 +63,5 @@ const isTeachersEmpty = teachers.length === 0;
 console.log("isTeachersEmpty:", isTeachersEmpty);
 const isTeachers2Empty = teachers2.length === 0;
 console.log("isTeachers2Empty:", isTeachers2Empty);
+//alternativa = !teachers.length
 
